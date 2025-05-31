@@ -49,12 +49,12 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4️⃣ Add your **API Key and Endpoint** to a `.env` file:
+4️⃣ Add your **API Key** to a `.env` file:
 ```
 API_KEY=your_api_key_here
-API_URL=https://your-ai-api-endpoint
-CANDIDATE_LABELS=invoice,Request For Quotation,complaint,regulation,meeting,order,spam
-CANDIDATE_LABELS_URGENCY=high,medium,low
+API_URL = 'https://api-inference.huggingface.co/models/facebook/bart-large-mnli'
+CANDIDATE_LABELS_INTENT = 'Request For Quotation,invoice, complaint, regulation, meeting, order, spam'
+CANDIDATE_LABELS_URGENCY = 'High Urgency,Low Urgency,Medium Urgency'
 ```
 
 ## 🚀 Usage
