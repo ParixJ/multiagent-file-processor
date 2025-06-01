@@ -50,6 +50,7 @@ pip install -r requirements.txt
 ```
 
 4️⃣ Add your **API Key** to a `.env` file:
+(Add your huggingface api key as this project uses huggingface models from api.)
 ```
 API_KEY=your_api_key_here
 API_URL = 'https://api-inference.huggingface.co/models/facebook/bart-large-mnli'
